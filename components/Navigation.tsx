@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navigation() {
   return (
@@ -10,10 +11,18 @@ export default function Navigation() {
         alt="True Reality Logo"
       />
       <ul className="flex ">
-        <li>Майстри</li>
-        <li>Розклад</li>
-        <li>Місце</li>
-        <li>Контакти</li>
+        <li>
+          <Link href="/masters">Майстри</Link>
+        </li>
+        <li>
+          <Link href="/masters">Розклад</Link>
+        </li>
+        <li>
+          <Link href="/masters">Місце</Link>
+        </li>
+        <li>
+          <Link href="/masters">Контакти</Link>
+        </li>
       </ul>
     </div>
   );
